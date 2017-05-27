@@ -65,6 +65,13 @@ app.get('/about', (req, res) => {
   });
 })
 
+app.get('/projects', (req, res) => {
+  // render template using view engine: default directory - views
+  res.render ('projects.hbs', {  // second param: object
+    pageTitle: 'Projects Page'
+  });
+})
+
 
 
 // sercond param is a function which runs after listener starts
